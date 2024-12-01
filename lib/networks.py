@@ -75,12 +75,11 @@ class PVT_Dense_Decoder(nn.Module):
 
 
 if __name__ == '__main__':
-    model = PVT_CASCADE()
+    model = PVT_Dense_Decoder()
     input_tensor = torch.randn(4, 3, 352, 352)
 
     out1, out2, out3 = model(input_tensor)
 
-    #print(p1.size(), p2.size(), p3.size(), p4.size())
 
 
 
